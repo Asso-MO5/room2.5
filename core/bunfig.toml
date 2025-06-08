@@ -1,0 +1,9 @@
+[build]
+entrypoints = ["./index.ts"]
+outdir = "./dist"
+minify = true
+target = "browser"
+
+[test]
+coverage = true
+preload = ["./test/setup.ts"] 
