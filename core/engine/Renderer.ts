@@ -26,7 +26,7 @@ export class Renderer {
   private NUM_RAYS: number;
   private PROJECTION_PLANE_DISTANCE = 64 * 4;
   private DEFAULT_FOG_COLOR = { r: 7, g: 7, b: 7 };
-  private MAX_RAY_DISTANCE = 1000;
+  private MAX_RAY_DISTANCE = 2000;
 
   /**
    * Creates a new Renderer instance.

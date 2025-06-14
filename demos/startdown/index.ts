@@ -5,18 +5,19 @@ import { MiniMap } from "../../core/ui/MiniMap";
 
 const FPS = 30;
 const canvas = document.getElementById("canvas") as HTMLCanvasElement;
-canvas.width = 192;
-canvas.height = 108;
+canvas.width = 64 * 4;
+canvas.height = 64 * 4;
 
 const level = new Level1();
 const player = new Player(64 * 1.5, 64 * 1.5, {
   mouseSensitivity: 0.001,
   baseSpeed: 10,
-  sprintSpeed: 20,
+  sprintSpeed: 30,
   jumpSpeed: 10,
 });
 player.setMap(level);
 const renderer = new Renderer(canvas, {
+
 });
 const miniMap = new MiniMap();
 
